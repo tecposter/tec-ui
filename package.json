@@ -28,5 +28,8 @@
     "lint": "yarn run eslint && yarn run sass-lint",
     "frontServer": "node ./script/frontServer.js server",
     "frontRelease": "node ./script/frontServer.js release"
-  }
+  },
+  "pre-commit": [
+      "sass-lint"
+  ]
 }
