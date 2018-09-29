@@ -1,0 +1,29 @@
+@import './setting';
+
+@import './gap';
+@import './base';
+
+@include gap-typography;
+@include gap-color;
+@include gap-table;
+@include gap-btn;
+@include gap-card;
+
+$palette-item-margin: .3rem;
+
+// page ui
+.palette {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    & > .item {
+        border: 1px solid get-color(light-gray);
+        font-size: .9rem;
+        height: 7rem;
+        line-height: 7rem;
+        margin: $palette-item-margin;
+        text-align: center;
+        width: 7rem;
+    }
+}
