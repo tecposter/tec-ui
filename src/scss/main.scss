@@ -10,6 +10,7 @@
 @include gap-card;
 
 $palette-item-margin: .3rem;
+$editor-item-margin: auto;
 
 // page ui
 .palette {
@@ -25,5 +26,26 @@ $palette-item-margin: .3rem;
         margin: $palette-item-margin;
         text-align: center;
         width: 7rem;
+    }
+}
+
+.editor-wrap {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    & > .item {
+        height: 100%;
+        margin: $editor-item-margin;
+        overflow: auto;
+        width: 50%;
+    }
+
+    .editor {
+        height: 100%;
+    }
+
+    .preview {
+        padding: 1rem;
     }
 }
