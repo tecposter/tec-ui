@@ -2,6 +2,9 @@ $btn-margin: 0;
 $btn-padding: .3rem .7rem;
 $btn-border-radius: 3px;
 
+$btn-round-margin: 0;
+$btn-round-padding: 0;
+
 @mixin gap-btn {
     .btn {
         border: 1px solid transparent;
@@ -42,6 +45,15 @@ $btn-border-radius: 3px;
 
         &.small {
             font-size: .7rem;
+        }
+
+        &.round {
+            border-radius: 50%;
+            height: 3rem;
+            line-height: 3rem;
+            padding: $btn-round-padding;
+            text-align: center;
+            width: 3rem;
         }
     }
 }

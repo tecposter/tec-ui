@@ -4,6 +4,7 @@
 @import './lib/gap/table';
 
 @import './lib/gap/btn';
+@import './lib/gap/form';
 @import './lib/gap/card';
 
 $global-font-size: 100% !default;
@@ -13,6 +14,9 @@ $body-padding: 0 !default;
 $body-font-family: PingFangSC, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif !default;
 $body-font-weight: normal !default;
 $body-line-height: 1.5 !default;
+
+$list-margin: 0 0 0 1.25rem;
+$list-padding: 0;
 
 html {
     box-sizing: border-box;
@@ -35,4 +39,16 @@ body {
 
     margin: $body-margin;
     padding: $body-padding;
+}
+
+ul,
+ol {
+    line-height: 1.6;
+    list-style-position: outside;
+    margin: $list-margin;
+    padding: $list-padding;
+}
+
+.hide {
+    display: none;
 }

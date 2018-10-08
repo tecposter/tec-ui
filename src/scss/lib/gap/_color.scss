@@ -55,6 +55,10 @@ $gap-palette-default: (
         background: get-color(primary);
         color: get-color(on-primary);
 
+        a {
+            color: inherit;
+        }
+
         &.light {
             background: get-color(light-primary);
             color: get-color(on-light-primary);
@@ -70,6 +74,10 @@ $gap-palette-default: (
         background: get-color(secondary);
         color: get-color(on-secondary);
 
+        a {
+            color: inherit;
+        }
+
         &.light {
             background: get-color(light-secondary);
             color: get-color(on-light-secondary);
@@ -84,10 +92,18 @@ $gap-palette-default: (
     .background-tint {
         background: get-color(background);
         color: get-color(on-background);
+
+        a {
+            color: get-color(primary);
+        }
     }
 
     .surface-tint {
         background: get-color(surface);
         color: get-color(on-surface);
+
+        a {
+            color: get-color(primary);
+        }
     }
 }
