@@ -5,13 +5,44 @@
 
 @include gap-typography;
 @include gap-color;
+
+@include gap-float;
+
 @include gap-table;
 @include gap-btn;
 @include gap-form;
 @include gap-card;
+@include gap-list;
+@include gap-mask;
+@include gap-zselect;
 
 $palette-item-margin: .3rem;
 $editor-item-margin: auto;
+
+a {
+    color: get-color(primary);
+    cursor: pointer;
+    line-height: inherit;
+    text-decoration: none;
+}
+
+.article-list {
+    a {
+        color: get-color(on-surface);
+    }
+
+    .item {
+        .action {
+            margin-right: .5rem;
+        }
+
+        &:hover {
+            .action {
+                color: get-color(primary);
+            }
+        }
+    }
+}
 
 // page ui
 .palette {
@@ -30,7 +61,7 @@ $editor-item-margin: auto;
     }
 }
 
-.editor-wrap {
+.markdown-editor {
     display: flex;
     height: 100%;
     width: 100%;
@@ -41,7 +72,7 @@ $editor-item-margin: auto;
         width: 50%;
     }
 
-    & > .editor-section {
+    & > .coder-section {
         overflow: hidden;
     }
 
@@ -49,12 +80,21 @@ $editor-item-margin: auto;
         overflow: auto;
     }
 
-    .editor {
+    .coder {
         height: 100%;
     }
 
     .preview {
         padding: 1rem;
+    }
+}
+
+.tec {
+    &.btn {
+        bottom: 1rem;
+        position: fixed;
+        right: 1rem;
+        z-index: 99;
     }
 }
 

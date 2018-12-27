@@ -4,8 +4,12 @@
 @import './lib/gap/table';
 
 @import './lib/gap/btn';
+@import './lib/gap/list';
+@import './lib/gap/float';
 @import './lib/gap/form';
 @import './lib/gap/card';
+@import './lib/gap/mask';
+@import './lib/gap/zselect';
 
 $global-font-size: 100% !default;
 
@@ -47,6 +51,12 @@ ol {
     list-style-position: outside;
     margin: $list-margin;
     padding: $list-padding;
+}
+
+pre {
+    code {
+        font-size: .85rem;
+    }
 }
 
 .hide {

@@ -30,6 +30,6 @@
     "frontRelease": "node ./script/frontServer.js release"
   },
   "pre-commit": [
-      "lint"
+    "lint"
   ]
 }

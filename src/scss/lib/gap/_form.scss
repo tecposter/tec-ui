@@ -3,6 +3,8 @@ $label-margin: 0 0 .5rem;
 $input-padding: .3rem .7rem;
 $input-margin: 0;
 
+$form-content-margin: 1rem !default;
+
 @mixin gap-form {
     label {
         display: block;
@@ -52,5 +54,9 @@ $input-margin: 0;
             outline: none;
             transition: box-shadow .5s, border-color .25s ease-in-out;
         }
+    }
+
+    .form-content {
+        padding: $form-content-margin;
     }
 }
