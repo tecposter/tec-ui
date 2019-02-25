@@ -29,17 +29,19 @@ a {
 .article-list {
     a {
         color: get-color(on-surface);
+
+        &:hover {
+            color: get-color(primary);
+        }
+    }
+
+    .prop {
+        font-size: .8rem;
     }
 
     .item {
         .action {
             margin-right: .5rem;
-        }
-
-        &:hover {
-            .action {
-                color: get-color(primary);
-            }
         }
     }
 }
