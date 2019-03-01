@@ -26,7 +26,19 @@ a {
     text-decoration: none;
 }
 
+.diff {
+    height: 100%;
+    min-height: 630px;
+}
+
 .article-list {
+    padding: 1rem 0;
+
+    .article-title {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
     a {
         color: get-color(on-surface);
 
@@ -40,8 +52,19 @@ a {
     }
 
     .item {
+        border-left: 2px solid transparent;
+        padding: .2rem .5rem;
+
         .action {
             margin-right: .5rem;
+        }
+
+        &.selected {
+            border-left-color: get-color(primary);
+
+            .article-title {
+                font-weight: bold;
+            }
         }
     }
 }

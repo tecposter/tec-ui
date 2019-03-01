@@ -39,6 +39,12 @@ $pop-margin: 78px auto 0;
             width: 90%;
             z-index: 77;
 
+            &.broad {
+                height: 98%;
+                margin-top: 1%;
+                width: 98%;
+            }
+
             input,
             select,
             textarea {
