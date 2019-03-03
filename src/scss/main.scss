@@ -32,6 +32,11 @@ img {
     max-width: 100%;
 }
 
+pre {
+    font-size: .85rem;
+    line-height: 1.3;
+}
+
 .diff {
     height: 100%;
     padding-top: $diff-top-height;
